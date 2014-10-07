@@ -3,8 +3,8 @@ WordPress-ACF-Image-Helper
 
 A simple image helper class and factory for Advanced Custom Fields Plugin and WordPress
 
-<h2>Best used with the following plugins</h2>
-https://github.com/elliotcondon/acf
+<h3>Best used with the following plugins</h3>
+https://github.com/elliotcondon/acf<br>
 http://www.advancedcustomfields.com/add-ons/options-page/
 
 <h1>Using this Class</h1>
@@ -19,7 +19,7 @@ The factory contains three methods for obtaining your image object:
 <li>createFromOptions - This is for retrieving an image object from an item set on an <a href="http://www.advancedcustomfields.com/add-ons/options-page/">ACF Options</a> Field</li>
 <li>createFromID - This is to use our helper class to save you a little time when you may already have the ID of an image.</li>
 </ul>
-In your templates and markup
+In your templates and markup:
 
 ```
     //Instantiate an Image helper object
@@ -33,9 +33,10 @@ In your templates and markup
 
     //Get Image ID for your own use
     $heroImage->id;
+
 ```
 
-<h2>The real simplicity and awesomeness lies here:<h2>
+<h3>The real simplicity and awesomeness lies here:</h3>
 ```
 echo $heroImage->buildImgTag('brent-did-good-things thumb more-classes');
 ```
