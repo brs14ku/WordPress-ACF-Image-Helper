@@ -13,18 +13,18 @@
  * OPTIONS AND POST ASSUME USE OF ADVANCED CUSTOM FIELDS
  **/
 
-class DegImageHelperFactory{
+class WPACFImageHelperFactory{
     public static function createFromOptions($fieldName, $size){
-        return new DegImageHelper($fieldName, 'options', $size);
+        return new WPACFImageHelper($fieldName, 'options', $size);
     }
     public static function createFromPost($fieldName, $size){
-        return new DegImageHelper($fieldName, 'post', $size);
+        return new WPACFImageHelper($fieldName, 'post', $size);
     }
     public static function createFromID($id, $size){
-        return new DegImageHelper(false, false, $size, $id);
+        return new WPACFImageHelper(false, false, $size, $id);
     }
 }
-class DegImageHelper
+class WPACFImageHelper
 {
     public $src;
     public $alt;
@@ -63,7 +63,7 @@ class DegImageHelper
         return $alt;
     }
     public function buildImgTag($classes){
-        $tag = '<img src="'.$this->src.'" class="'.$classes.'">';
+        $tag = '<img src="'.$this->src.'" class="'.$classes.'" alt="'.$this->alt.'">';
         return $tag;
     }
 
