@@ -40,4 +40,4 @@ In your templates and markup:
 ```
 echo $heroImage->buildImgTag('brent-did-good-things thumb more-classes');
 ```
-The above line will dump an full html image tag with the image src, alt and the classes you pass it for use. Just echo it out and you're good to go.
+The above line will dump a full html image tag with the image src, alt and the classes you pass it for use. Just echo it out and you're good to go.
