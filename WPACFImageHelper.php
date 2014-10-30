@@ -1,15 +1,6 @@
 <?php
 
 /**
- * Created by PhpStorm.
- * User: bschultz
- * Date: 8/21/14
- * Time: 4:38 PM
- *
- *
- */
-
-/**
  * OPTIONS AND POST ASSUME USE OF ADVANCED CUSTOM FIELDS
  **/
 
