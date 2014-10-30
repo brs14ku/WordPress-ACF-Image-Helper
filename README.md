@@ -18,6 +18,7 @@ The factory contains three methods for obtaining your image object:
 <li>createFromPost - This is when you're calling your object in the loop where post->ID is accessible</li>
 <li>createFromOptions - This is for retrieving an image object from an item set on an <a href="http://www.advancedcustomfields.com/add-ons/options-page/">ACF Options</a> Field</li>
 <li>createFromID - This is to use our helper class to save you a little time when you may already have the ID of an image.</li>
+<li>createFromPostID - To get an image from an ACF field outside of the loop</li>
 </ul>
 In your templates and markup:
 

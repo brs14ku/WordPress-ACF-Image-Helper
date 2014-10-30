@@ -14,7 +14,7 @@ class WPACFImageHelperFactory{
     public static function createFromID($id, $size){
         return new WPACFImageHelper(false, false, $size, $id);
     }
-    public static function createFromPostId($postID, $size, $fieldName){
+    public static function createFromPostID($postID, $size, $fieldName){
         return new DegImageHelper($fieldName, 'fromID', $size, false, $postID);
     }
 }
